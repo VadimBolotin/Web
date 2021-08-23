@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu.css">   
+    <link rel="stylesheet" href="css/icon-font.min.css">
+    <link rel="stylesheet" href="css/bxslider.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Иконка лого-->
+    <link rel="stylesheet" href="images/logo.png">
+    <title>Студия создаия сайтов</title>
+</head>
+<body>
+    <div class="preload"> <!--preload(предзагрузчики) легкая простая анимация перекрывает весь сайт-->
+        <div id="spinSquares"><!--для общих квадратиков-->
+            <div id="spinSquar_1" class="spinSquar"></div>
+            <div id="spinSquar_2" class="spinSquar"></div>
+            <div id="spinSquar_3" class="spinSquar"></div>
+            <div id="spinSquar_4" class="spinSquar"></div>
+            <div id="spinSquar_5" class="spinSquar"></div>
+            <div id="spinSquar_6" class="spinSquar"></div>
+            <div id="spinSquar_7" class="spinSquar"></div>
+            <div id="spinSquar_8" class="spinSquar"></div>
+        </div>
+    </div>
+     <!--бутстреп сткуртура (контейнер)-->
+    <div class="topheader"><!--topheader настройчивый класс, устанавливает задний фон, высоту и положение(меняться по размеру)-->
+        <div class="container"><!--container Задает ширину строки огрничивает чтобы меньше не раздувалось-->
+            <header class="header">
+                <div class="logo">
+                <a href="#0" >
+                    <img src="images/logo.png" alt="logo">
+                    <p>Студия создания сайтов</p>
+                </a>
+                </div>
+                <div class="menu">
+                    <!--подготовка под триггер меню-->
+                    <a href="#0" class="primary-nav-trigger">
+                        <span class="menu-icon"></span>
+                    </a>
+                </div>
+            </header>
+        </div>
+    </div> 
+
+    <nav>
+        <ul class="primary-nav">
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#aboutus">О нас</a></li>
+            <li><a href="#somefututes">Мы в цифрах</a></li>
+            <li><a href="#ourworks">Портфолио</a></li>
+            <li><a href="#partners">Партнеры</a></li>
+            <li><a href="#team">Команда</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#getintouch">Контакты</a></li>
+            <li><a href="#office">Наш офис</a></li>
+        </ul>
+    </nav>
+
+    <!--Идет работа со всем сайтом-->
+    <main>
+        <section class="banner" id="main">
+            <!--для ограничения ширины сайта-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <ul class="bxslider">
+                            <li>
+                                <h2>Профессионализм - наше все!</h2>
+                                <p>Менее 5% переделок</p>
+                            </li>
+                            <li>
+                                <h2>Скорость вожна в любом бизнесе!</h2>
+                                <p>Создаем сайты от 3-х дней</p>
+                            </li>
+                            <li>
+                                <h2>Надежность наша фишка</h2>
+                                <p>Ни одного упавшего сайта!</p>
+                            </li>
+                        </ul>
+                        
+                        <a href="#about" >
+                            <div class="scrolldown">
+                                <img src="images/mouse.png" alt="LOGO">
+                                <p>ЛИСТАЙ ДАЛЬШЕ</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <section class="aboutus" id="aboutus">
+            <div class="container">
+                <div class="row">
+                        <div class="head_white_content">
+                            <h3>О нас</h3>
+                            <span></span>
+                            <p>Наша студия была основана двумя энтузиастами в 2013 году. 
+                                Мы начинали наше дело вдвоем, а на данный момент наша команда насчитываетс более 20
+                                специалистов в разных сферах веб-разработки. Нас полюбили на рынке за 
+                            </p>
+                        </div>
+                </div>
+                <div class="row">
+                    <!--для того чтобы под разными экранами все было правильно-->
+                    <div class="col-md-4 col-xl-4 col-lg-4">
+                        <div class="advantage">
+                            <span class="lnr lnr-picture"></span>
+                            <h4>Индивидуальный подход</h4>
+                            <p>
+                                В современных реалиях компании завоевывают клиентов благодаря
+                                индивидуальному подходу, и мы не станем исключением!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4 col-lg-4">
+                        <div class="advantage">
+                            <span class="lnr lnr-briefcase"></span>
+                            <h4>Открытое портфолио</h4>
+                            <p>
+                                Мы беремся за сайты любой сложности и любой профельной направленности,
+                                ниже вы сможете увидеть каждую страничку, созданную нашими специалистами. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4 col-lg-4">
+                        <div class="advantage">
+                            <span class="lnr lnr-sync" aria-hidden="true"></span>
+                            <h4>Обновления!</h4>
+                            <p>
+                                Сфера web-разработки не позволяет стоять на месте, именно поэтому мы внедряем
+                                новые технологии прямо сейчас!  продолжаем обновлять уже разработанные сайты!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="somefututes" id="somefututes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><!--столбец занимает всю доступную ширину-->
+                        <div class="head_black_content">
+                            <h4>Мы в цифрах</h4>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row numeral">
+                    <div class="col-md-3 col-xl-3 col-lg-3">
+                        <span class="lnr lnr-screen"></span>
+                        <p>Уже работающих сайтов</p>
+                        <h5>132</h5>
+                    </div>
+                    <div class="col-md-3 col-xl-3 col-lg-3">
+                        <span class="lnr lnr-user"></span>
+                        <p>Довольних клиентов</p>
+                        <h5>80+</h5>
+                    </div>
+                    <div class="col-md-3 col-xl-3 col-lg-3">
+                        <span class="lnr lnr-hourglass"></span>
+                        <p>время изготовления</p>
+                        <h5>5 дней</h5>
+                    </div>
+                    <div class="col-md-3 col-xl-3 col-lg-3">
+                        <span class="lnr lnr-thumbs-up"></span>
+                        <p>Скорость загрузки</p>
+                        <h5><2 сек</h5>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ourworks" id="ourworks">
+            <div class="container">
+                <div class="row">
+                    <div class="head_white_content">
+                        <h3>ПОРТФОЛИО</h3>
+                        <span></span>
+                        <p>
+                            За время нашей работы, мы накопили огромное колличество сайтов,
+                            с которыми вы можете ознакомиться. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix workportfolio">
+                <ul id="filters" class="clearfix">
+                    <!--data-filter собственный атрибут не обрабатывается html  только подключив плагин(имяь собсвтенное) -->
+                    <li><span class="filter active" data-filter="lend card magas shop">Все проекты</span></li>
+                    <li><span class="filter "data-filter="lend">Лендинги</span></li>
+                    <li><span class="filter "data-filter="card">Визитки</span></li>
+                    <li><span class="filter "data-filter="magas">Каталоги</span></li>
+                    <li><span class="filter "data-filter="shop">Интернет-магазины</span></li>
+                </ul>
+                <div id="portfoliolist"><!--общий класс-->
+                    <!--единичный класс-->
+                    <div class="portfolio lend" data-cat="lend"><!--data-cat отвечает за то что именна эта карточка отвечает за lend-->
+                        <div class="portfolio-wrapper"><!--идет секкиця в которую мы помещем картинку потом через стили растянем-->
+                            <img src="images/portfolios/app/1.jpg" alt="">
+                            <div class="imgDisc2"><!--всплывает описание скрытый -->
+                                <h1>Название сайта</h1>
+                                <p>Описание сайта</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio lend" data-cat="lend">
+                        <div class="portfolio-wrapper">
+                            <img src="images/portfolios/app/2.jpg" alt="">
+                            <div class="imgDisc2">
+                                <h1>Название сайта</h1>
+                                <p>Описание сайта</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio lend" data-cat="lend">
+                        <div class="portfolio-wrapper">
+                            <img src="images/portfolios/app/3.jpg" alt="">
+                            <div class="imgDisc2">
+                                <h1>Название сайта11</h1>
+                                <p>Описание сайта11</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio card" data-cat="card">
+                        <div class="portfolio-wrapper">
+                            <img src="images/portfolios/card/4.jpg" alt="">
+                            <div class="imgDisc2">
+                                <h1>Название сайта12</h1>
+                                <p>Описание сайта12</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio card" data-cat="card">
+                        <div class="portfolio-wrapper">
+                            <img src="images/portfolios/card/5.jpg" alt="">
+                         <div class="imgDisc2">
+                            <h1>Название сайта1</h1>
+                            <p>Описание сайта1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio card" data-cat="card">
+                    <div class="portfolio-wrapper">
+                        <img src="images/portfolios/card/6.jpg" alt="">
+                        <div class="imgDisc2">
+                            <h1>Название сайта2</h1>
+                            <p>Описание сайта2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio card" data-cat="card">
+                    <div class="portfolio-wrapper">
+                        <img src="images/portfolios/card/7.jpg" alt="">
+                        <div class="imgDisc2">
+                            <h1>Название сайта3</h1>
+                            <p>Описание сайта3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio magas" data-cat="magas">
+                    <div class="portfolio-wrapper">
+                        <img src="images/portfolios/icon/8.jpg" alt="">
+                     <div class="imgDisc2">
+                        <h1>Название сайта4</h1>
+                        <p>Описание сайта4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio magas" data-cat="magas">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/9.jpg" alt="">
+                 <div class="imgDisc2">
+                    <h1>Название сайта5</h1>
+                    <p>Описание сайта5</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio magas" data-cat="magas">
+            <div class="portfolio-wrapper">
+                <img src="images/portfolios/icon/10.jpg" alt="">
+             <div class="imgDisc2">
+                <h1>Название сайта6</h1>
+                <p>Описание сайта6</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio magas" data-cat="magas">
+        <div class="portfolio-wrapper">
+            <img src="images/portfolios/icon/11.jpg" alt="">
+         <div class="imgDisc2">
+            <h1>Название сайта7</h1>
+            <p>Описание сайта7</p>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio shop" data-cat="shop">
+    <div class="portfolio-wrapper">
+        <img src="images/portfolios/web/12.jpg" alt="">
+     <div class="imgDisc2">
+        <h1>Название сайта8</h1>
+        <p>Описание сайта8</p>
+    </div>
+</div>
+</div>
+
+<div class="portfolio shop" data-cat="shop">
+    <div class="portfolio-wrapper">
+        <img src="images/portfolios/web/13.jpg" alt="">
+     <div class="imgDisc2">
+        <h1>Название сайта9</h1>
+        <p>Описание сайта9</p>
+    </div>
+</div>
+</div>
+
+<div class="portfolio shop" data-cat="shop">
+    <div class="portfolio-wrapper">
+        <img src="images/portfolios/web/14.jpg" alt="">
+     <div class="imgDisc2">
+        <h1>Название сайта10</h1>
+        <p>Описание сайта10</p>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-12 col-lg-12 col-xl-12">
+                            <div class="head_black_content">
+                                <h4>ПАРТНЕРЫ</h4>
+                            </div>
+                        </div>
+                </div> 
+              
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="innerwidth">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="images/partner1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/partner2.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/partner3.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/partner4.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/partner1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/partner2.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="head_white_content">
+                        <h3>КОМАНДА</h3>
+                        <span></span>
+                        <p>
+                            Ознакомтесь подробнее со специалистами, которые
+                            будут работать над вашим сайтом. 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="bxslider_team">
+                        <li>
+                            <div class="row teamslider">
+                                <div class="col-md-4">
+                                    <div class="sinner1">
+                                        <img src="images/simage1.png">
+                                        <h4>Болотин Вадим</h4>
+                                        <p>Начинающий web-разработчик</p>
+                                        <a href=""><img src="images/icon-inst.png" alt=""></a>
+                                        <a href=""><img src="images/icon-vk.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="sinner2">
+                                        <h4>Мои скилы</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                            Optio veniam necessitatibus voluptas incidunt excepturi voluptate obcaecati repudiandae modi? 
+                                            Natus nemo harum totam provident est? Error?
+                                        </p>
+                                        <img src="images/stat.png">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row teamslider">
+                                <div class="col-md-4">
+                                    <div class="sinner1">
+                                        <img src="images/simage1.png">
+                                        <h4>Болотин Вадим</h4>
+                                        <p>Начинающий web-разработчик</p>
+                                        <a href=""><img src="images/icon-inst.png" alt=""></a>
+                                        <a href=""><img src="images/icon-vk.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="sinner2">
+                                        <h4>Мои скилы</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                            Optio veniam necessitatibus voluptas incidunt excepturi voluptate obcaecati repudiandae modi? 
+                                            Natus nemo harum totam provident est? Error?
+                                        </p>
+                                        <img src="images/stat.png">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row teamslider">
+                                <div class="col-md-4">
+                                    <div class="sinner1">
+                                        <img src="images/simage1.png">
+                                        <h4>Болотин Вадим</h4>
+                                        <p>Начинающий web-разработчик</p>
+                                        <a href=""><img src="images/icon-inst.png" alt=""></a>
+                                        <a href=""><img src="images/icon-vk.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="sinner2">
+                                        <h4>Мои скилы</h4>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                            Optio veniam necessitatibus voluptas incidunt excepturi voluptate obcaecati repudiandae modi? 
+                                            Natus nemo harum totam provident est? Error?
+                                        </p>
+                                        <img src="images/stat.png">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="price" id="price">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="head_black_content">
+                            <h4>ЦЕНЫ </h4>
+                            <span></span>
+                            <p class="addit_info">
+                                Цены за услуги за базовый САНДАРНЫЙ сайт указаны приблизительно.<br> 
+                                Подробнее с ними вы можете ознакомиться позвонив нам ^_^
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                        <!--контент цены-->
+                <div class="row">
+                    <!--для того чтобы под разными экранами все было правильно-->
+                    <div class="col-md-3 ">
+                        <div class="price-content">
+                            <!--РАзделяем для того чтобы был разный цвет в блоке-->
+                            <div class="price-content-head">
+                                <h5>от 7 000р.</h5>
+                                <h4>ЛЕНДНГ</h4>
+                                <p>Одностраничный сайт для продукта</p>
+                            </div>
+                            <div class="price-content-body">
+                                <p><span>8</span> Блоков</p>
+                                <p><span>1</span> Товар или услуга</p>
+                                <p><span>3</span> Правки</p>
+                                <p><span>200+</span> Клиентов в месяц</p>
+                                <a href="#" class="order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="price-content">
+                            
+                            <div class="price-content-head">
+                                <h5>от 13 000р.</h5>
+                                <h4>ВИЗИТКА</h4>
+                                <p>Презентация компании и ее товара </p>
+                            </div>
+                            <div class="price-content-body">
+                                <p><span>5</span> Страниц</p>
+                                <p><span>5</span> Суб. Страниц</p>
+                                <p><span>5</span> Правок</p>
+                                <p><span>500+</span> Клиентов в месяц</p>
+                                <a href="#" class="order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="price-content">
+                            
+                            <div class="price-content-head">
+                                <h5>от 20 000р.</h5>
+                                <h4>КАТАЛОГ</h4>
+                                <p>Демонстрация товаров</p>
+                            </div>
+                            <div class="price-content-body">
+                                <p><span>15</span> Страниц</p>
+                                <p><span>50</span> Товаров</p>
+                                <p><span>10</span> Правок</p>
+                                <p><span>700+</span> Клиентов в месяц</p>
+                                <a href="#" class="order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="price-content">
+                            
+                            <div class="price-content-head">
+                                <h5>от 35 000р.</h5>
+                                <h4>ИНТЕРНЕТ-МАГАЗИН</h4>
+                                <p>Полный цикл покупки в интернете</p>
+                            </div>
+                            <div class="price-content-body">
+                                <p><span>20</span> Страниц</p>
+                                <p><span>100</span> Товаров</p>
+                                <p><span>10+</span> Правок</p>
+                                <p><span>1300+</span> Клиентов в месяц</p>
+                                <a href="#" class="order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="getintouch" id="getintouch">
+            <div class="container">
+                <div class="row">
+                    <div class="head_white_content">
+                        <h3>КОНТАКТЫ</h3>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, repudiandae a? 
+                            Voluptatibus, dolor provident aspernatur incidunt pariatur sunt possimus, 
+                            natus minus ad, 
+                            deserunt alias unde. Consequatur alias labore nesciunt asperiores?
+                        </p>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" id="send_form" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6 textinput">
+                                        <p>Имя<span>*</span></p>
+                                        <input type="text" name="name" id="name">
+                                    </div>
+                                    <div class="col-md-6 textinput">
+                                        <p>Электронная почта<span>*</span></p>
+                                        <input type="text" name="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 textmsg">
+                                        <p>Комментарий<span>*</span></p>
+                                        <textarea name="msg" id="" cols="30" rows="10"></textarea>
+                                        <input type="button" class="submit" value="Отправить запрос">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="office">
+            <!--вызывается аккордион и карты-->
+            <div class="accordion map">
+                <h4>Наш офис</h4>
+                <span></span>
+            </div>
+            <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.7225495811153!2d37.573373315658245!3d55.81541698057017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5362189485795%3A0x80f98299e91dbca!2zMdChOtCj0YfQtdCx0L3Ri9C5INGG0LXQvdGC0YAg4oSWMQ!5e0!3m2!1sru!2sru!4v1597570560638!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#">
+                                <img src="images/logo.png" alt="">
+                        </a>
+                        <h4>СТУДИЯ СОЗДАНИЯ САЙТОВ</h4>
+                        <p>Разработанно в <a href="https://club.1c.ru/"> 1С:Клуб программистов</a></p>
+                        <a href="#" class="social-lg">
+                            <img src="images/icon-inst.png" alt="">
+                        </a>
+                        <a href="#" class="social-lg">
+                            <img src="images/icon-vk.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script/jquery-2.1.1.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/bxslider.js"></script>
+    <script src="script/jquery.flexslider.js"></script>
+    <script src="script/jquery.accordion.js"></script>
+    <script src="script/jquery.mixitup.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.primary-nav-trigger .menu-icon{
+    width: 38px;
+    height: 2px;
+    position: absolute;/*при простом позиционировании padding*/
+    /*координаты относительно ... а не отступы*/
+    top: 50%;
+
+    left: 50%;
+    background-color:black;
+}
+
+/*befor-после  after-до  добавляет два элементакоторыеобращаются к этим полосам*/
+.primary-nav-trigger .menu-icon::before, .primary-nav-trigger .menu-icon::after{
+    /*для вторичных полос*/
+    content: '';/*для того чтобыполосы отображались*/
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+
+    transition: transform 0.3s, top 0.3s;/*при трансформации анимации 3 секунды - при изменении положения относительно верха время трансформации 3 секунды - для того чтобы крустик вставали не резко а плавно*/
+}
+.primary-nav-trigger .menu-icon::after{
+    top: 9px;
+}
+
+.primary-nav-trigger .menu-icon::before{
+    top: -9px;
+}
+
+/*кликабельная область*/
+.primary-nav-trigger{
+    position: absolute;
+    right: 20%;
+    top: 0;
+    height: 100%;
+    width: 60px;
+}
+
+/*при открытом меню убрать среднюю полоску в гамбургере*/
+.primary-nav-trigger .menu-icon.is-clicked{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*поворот гамбургера при открытии в крестик*/
+.primary-nav-trigger .menu-icon.is-clicked::before{
+    top: 0;
+    transform: rotate(120deg);
+}
+
+.primary-nav-trigger .menu-icon.is-clicked::after{
+    top: 0;
+    transform: rotate(240deg);
+}
+
+/*стиль меню*/
+.primary-nav{
+    z-index: 9999;/*чтобы у нас меню было на 9999 слое  выше всех элементов и перекрывало их*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0 10px;/*94 решил проблему прокрутки внутри меню по примеру было 150px*/
+    background: rgba(0, 0, 0, 0.96);
+    text-align: center;
+    backface-visibility: hidden;/*как он будет накладываться*/
+    overflow: auto;/*оно раскрываетсяна весь экран*/
+    transform: translateY(-100%);/*перемещение*/
+    transition-property: transform;/*тип трансформации */
+    transition-duration: 0.4s;
+}
+
+.primary-nav li{
+    font-weight: 300;
+    margin: .2em 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/*появление при открытии*/
+.primary-nav.is-visible{
+    transform: translateY(0);
+}
+
+/*элемент меню*/
+.primary-nav a{
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 1em;
+    border-radius: 0.25em;
+    transition: background 0.2s;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Наведение на элемент меню*/
+.primary-nav a:hover{
+    background-color: #e36767;
+}

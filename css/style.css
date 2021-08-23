@@ -1,0 +1,674 @@
+@font-face{
+    font-family: 'bignoodletitling';
+    src: url('/web2/font/big_noodle_titling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    color: #696969;
+    font-size: 14px;
+    line-height: 100%;/*высота строки*/
+    font-weight: 300;/*начертания*/
+}
+
+.logo{
+    display: block;
+    position: absolute;/*потому что шапка будет изменять размер*/
+    bottom: auto;
+    font-family: 'bignoodletitling';
+}
+/*через наследование указываем параметры картинки*/
+.logo>a>img{
+    height: 60px;
+    padding-right: 10px;
+    margin-top: -10px;
+}
+
+.logo>a{
+    font-family: 'bignoodletitling';
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;/*отвечает за написание больших букв*/
+    font-size: 20px;
+    line-height: initial;
+    text-decoration: none
+}
+
+.topheader{
+    height: 144px;
+    position: fixed;/*шапка всегда видна придвиженнии*/
+    width: 100%;
+    z-index: 99999;
+    background-color: white;
+
+    /*скачет при сжатии*/
+    transition: 0.3s;
+}
+
+/*отвечает за класс сжатия*/
+.topheader.is-fixed{
+    height: 80px;
+}
+
+.topheader.is-fixed a{
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.banner{
+    background: url(/web2/images/slider.jpg) #353535;
+    background-blend-mode:multiply/*наложение*/  ; /*отвечает за смешивание заднего фона с картинкой притимнится станет полупрозрачной */
+    min-height: 700px;/*(в примере 700px)*//*чтобы слайдер растягивался во всю высоту экрана пользователя */
+    align-items: center;
+    background-size: cover; /*растягивание и всегда не меняется*/
+    width: 100%;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.banner h2{
+    font-family: 'bignoodletitling';
+    font-size: 3rem;
+}
+
+.banner p{
+    font-family: 'bignoodletitling';
+    font-size: 2rem;
+}
+
+.scrolldown{
+    position: absolute;
+    margin-top: 15%;
+    left: calc(50% - 20px);
+    
+}
+
+.scrolldown img{
+    margin-bottom: 10px;
+    
+}
+
+.scrolldown p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+
+h3{
+    font-size: 38px;
+    text-transform: uppercase;/*Все заглавными*/
+    font-family: 'bignoodletitling';
+}
+
+.head_white_content{
+    text-align: center;
+    width: 100%;
+    padding: 90px;
+    
+}
+
+.head_white_content span{
+    height: 3px;
+    width: 154px;
+    background-color: tomato;
+    display: inline-block;
+    
+}
+
+.head_white_content p{
+    padding: 25px 60px 0px;
+    
+}
+
+.aboutus{
+    margin-bottom: 90px;
+}
+
+.advantage{
+    text-align: center;
+    width: 100%;
+    background: #e9dddd;
+    /*background: #ebebeb;*/
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.advantage span{
+    font-size: 60px;
+    color: #f4511e;
+}
+
+.advantage h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #707070;
+    padding: 25px 0 13px;
+}
+
+.advantage p{
+    color: #707070;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.somefututes{
+    background: #171f23;
+    text-align: center;
+    padding: 60px 0;
+    
+}
+
+.head_black_content{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.head_black_content h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.head_black_content span{
+    width: 86px;
+    height: 2px;
+    background: #404040;
+    display: inline-block;
+}
+/*Обращение к эконке*/
+.numeral>div>span{
+    font-size: 60px;
+    color: #ff7062;
+}
+/*обращение к заголовку цифры*/
+.numeral>div>p{
+    font-size: 18px;
+    color: #f6f6f6;
+    padding: 30px 0;
+    font-weight: 300;    
+}
+/*Обращение к цифре*/
+.numeral>div>h5{
+    font-size: 48px;
+    color: #f6f6f6;
+    font-weight: 300;  
+}
+
+.team{
+    margin-bottom: 90px;
+}
+
+/*Выставление цены*/
+
+.price{
+    background: #171f23;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.addit_info{
+    padding: 20px 0;
+    color: #f6f6f6;
+}
+
+
+
+.price-content-head{
+    background: #0e1316;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 40px 0px 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+.price-content-head h4{
+    padding-top: 6px;
+    font-size: 24px;
+}
+
+.price-content-head p{
+    margin-top: 25px;
+    padding: 0 25px;
+    font-size: 14px;
+}
+
+.price-content-body{
+    background: #1f282c;
+    padding: 45px 0 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    /*font-weight: 300;*/
+    border-radius: 0 0 15px 15px;
+}
+
+.price-content-body p{
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #ffffff
+}
+
+/*Стиль для цифр*/
+.price-content-body p span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+/*Стиль для кнопки "заказать"*/
+.price-content-body a{
+    background: #f4511e;
+    color: #ffffff;
+    border-radius: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/*нужен для того чтобы наш родитель вместе
+со всем содержимым "вышел" за пределы bootstrap
+блока и позволил растянуться*/
+.price-content{
+    width: 110%;
+}
+
+/*выделение блока при наведении*/
+.price-content:hover{
+    border: 1px solid #f15324;
+    border-radius: 15px;
+}
+/*выделение цифр при наведении*/
+.price-content:hover .price-content-body>p>span{
+    color: #f15324;
+}
+
+
+
+.sinner1{
+    min-height: 440px;
+    padding: 70px 90px ;
+    text-align: center;
+    /*background-color: #ebebeb;*/
+    background-color: #e9dddd;
+    border-radius: 15px;
+    
+}
+
+/*меняем размер картинки*/
+.sinner1 a img{
+    width: 20%;
+    
+}
+
+.sinner1 h4{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'bignoodletitling';    
+}
+
+.sinner2{
+    min-height: 440px;
+    padding: 70px 90px 60px;
+    /*background-color: #ebebeb;*/
+    background-color: #e9dddd;
+    border-radius: 15px;
+}
+
+.sinner2 h4{
+    font-family: 'bignoodletitling';
+}
+
+
+/*селектор 3 точек смещение их*/ 
+.team .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: -34%;
+}
+
+
+
+.partners{
+    background: url(../images/cbanner.jpg) #171f23;
+    text-align: center;
+    font-size: 20px; 
+    padding: 60px 0;
+    background-size: cover;
+}
+
+/*стили для картинок*/
+.slides{
+    display: flex;
+    align-items: center; /*выравнивание по вертикали*/
+}
+.innerwidth{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/*Контакты стили*/
+.getintouch{
+    padding: 80px 0;
+}
+
+.textinput{
+    width: 50%;
+    margin: 40px 0;
+}
+
+.textinput p, .textmsg p{
+    font-weight: 700;
+    color: #696969;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textinput input{
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 90%;
+    height: 40px;
+    outline: 0; /*выделение рамки при нажатии*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textinput p span, .textmsg p span{
+    color: #f6744b;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+.getintouch form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.textmsg textarea{
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 95%;
+    height: 80px;
+    outline: 0;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*когда кликаешь по полю ввода - меняется цвет рамки*/
+.textinput input:focus, .textmsg textarea:focus{
+    box-shadow: 0px 1px 2.98px 4.02px rgba(246, 116, 75, 0.5 );
+}
+
+.submit{
+    width: 205px;
+    height: 50px;
+    letter-spacing: 1px;/*отступы между буквами*/
+    background: #f6744b;
+    border: 1px solid #f6744b;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    margin: 50px auto 0;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.submit:hover{
+    color: #f6744b;
+    background-color: #ffffff;
+    transition: all 0.5s;/*анимация кнопки*/
+}
+
+.map{
+    background: black;
+    text-align: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.map h4{
+    color: #ebebeb;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;/*стрелочку поднимает параллельно h4*/
+}
+
+/*форматирование стрелочек open/close*/
+.map span{
+    margin-left: 10px;
+    font-weight: 700;
+    color: #f15324;
+    font-size: 24px;
+}
+
+/*открывание и закрывание стрелочек в акардионе в картах*/
+.accordion-open span::before{
+    font-family: 'Linearicons-Free';
+    content: "\e873"/*"&#xe873"; такое начало характерно для html*/;
+}
+
+.accordion-close span::after{
+    font-family: 'Linearicons-Free';
+    content: "\e874";
+}
+
+footer{
+    text-align: center;
+    padding: 45px 0 60px;
+    background-color: #171f23;
+    color: white;
+}
+
+footer h4{
+    font-family: 'bignoodletitling';
+    font-size: 24px;
+    letter-spacing: 1px;/*Определяет интервал между символами в пределах элемента*/
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.social-lg img{
+    height: 40px;
+}
+
+#filters{
+    margin: 1% auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    list-style: none;/*Изменяет вид маркера для каждого элемента списка*/
+}
+
+#filters li{
+    display: inline-block;/*делает в одну линию*/
+    padding: 5px 10px;
+}
+
+.filter{
+    display: block;
+    line-height: 110%;/*Устанавливает интерлиньяж (межстрочный интервал) текста*/
+    text-decoration: none;/*Добавляет оформление текста*/
+    color: #3d3d3d;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.filter.active{
+    font-weight: 700;
+    color: #3d3d3d;
+    border-bottom: 1px solid #e84c3d;
+}
+
+.imgDisc2{
+    position: absolute;/*чтобы были в притык к друг другу*/
+    color: #ffffff;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: center;
+    visibility: hidden;/*при наведении - скрыто по умолчанию*/
+    opacity: 0;/*убрать прозрачность*/
+    padding-top: 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    /*картинка выше а заголовок ниже и он  скрыт был при обозначении ниже он появился*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.portfolio-wrapper:hover .imgDisc2{
+    visibility:  visible;
+    opacity: 1;
+}
+
+.imgDisc2 h1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#portfoliolist .portfolio{
+    border: none !important;/*бутстреб добавляется */
+    width: 20%;
+    float: left;/*оптекание по левой стороне*/
+    overflow: hidden;/*все что будет выходить за 20% оно будет скрываться*/
+    display: none;/*плагин сам будет показывать элемент*/
+}
+
+.portfolio-wrapper{
+    overflow: hidden;
+    position: relative;/*для того что помещается на передний или задний фон - для корректного отображении напдписи*/
+    cursor: pointer;
+}
+
+.portfolio img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+.send_success{
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(1, 255, 1, 0.3);
+    border: 2px solid rgba(1, 255, 1, 0.3);
+}
+
+.send_fail{
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(255, 1, 1, 0.3);
+    border: 2px solid rgba(255, 1, 1, 0.3);
+}
+
+#send_form{
+    transition: all 1s ease-out;
+}
+
+
+
+/*стили прелоадера*/
+.preload{
+    width: 100%;
+    height: 100%;
+    background: #171f23;
+    position: fixed;
+    z-index: 999999;
+    
+}
+
+#spinSquares{
+    position: relative;
+    width: 234px;
+    height: 28px;
+    margin: auto;
+    top: 50%;
+}
+
+.spinSquar{
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    animation-name: spinningSquares; /*имя анимации которой будет присваиваться(имя собственное)*/
+    animation-duration: 1.5s;/*время полного цикла анимации, за какое время квадратик провернет свою анимацию*/
+    animation-iteration-count: infinite;/*количество повторений квадратика*/
+    transform: scale(0.3);
+}
+
+
+
+/*Сдвиг квадратов в пространстве и анимации*/
+#spinSquar_1{
+    left: 0px;
+    animation-delay: 0.6s;
+}
+
+#spinSquar_2{
+    left: 28px;
+    animation-delay: 0.75s;
+}
+
+#spinSquar_3{
+    left: 56px;
+    animation-delay: 0.9s;
+}
+
+#spinSquar_4{
+    left: 84px;
+    animation-delay: 1.05s;
+}
+
+#spinSquar_5{
+    left: 112px;
+    animation-delay: 1.2s;
+}
+
+#spinSquar_6{
+    left: 140px;
+    animation-delay: 1.35s;
+}
+
+#spinSquar_7{
+    left: 168px;
+    animation-delay: 1.5s;
+}
+
+#spinSquar_8{
+    left: 196px;
+    animation-delay: 1.65s;
+}
+
+@keyframes spinningSquares{/*правило которое задает анимацию, анимация создается по ключевым точкам*/
+    /*ключевые точки - создаете начало и конец, а то чтопо середине дорисовывает сам компьютер*/
+    0%{
+        transform: scale(1);/*квадратик сановится самим собой*/
+    }/*0% совершенной анимации */
+    100%{
+        transform: scale(0.3) rotate(90deg);/**/
+    }/*на последнем ключевом квадратике - он долженповернуться под 90 градусов (встать не квадратиком
+    а ромбиком) и уменьшиться в размере на 70%(scale(0.3))*/
+}
