@@ -60,7 +60,7 @@ body{
 }
 
 .banner{
-    background: url(/web2/images/slider.jpg) #353535;
+    background: url(../images/slider.jpg) #353535;
     background-blend-mode:multiply/*наложение*/  ; /*отвечает за смешивание заднего фона с картинкой притимнится станет полупрозрачной */
     min-height: 700px;/*(в примере 700px)*//*чтобы слайдер растягивался во всю высоту экрана пользователя */
     align-items: center;
